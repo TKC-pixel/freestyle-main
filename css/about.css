@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  
+}
+#google_translate_element_container {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 1000;
+}
+
+.sect{
+opacity: 0;
+transition: 2s;
+}
+.sect.active{
+z-index: -50px;
+opacity: 1;
+}
+
+
+video{
+    width: 90%;
+    image-resolution: 100%;
+    
+}
+
+
+.nav2 {
+width: 100%;
+height: 80px;
+display: inline;
+background-color: #81cbe9;
+}
+#sers{
+    color: #2270e2;
+    font-size: 30px;
+}
+
+.nav2 {
+width: 100%;
+height: 60px;
+display: inline;
+background-color: #2270e2;
+}
+
+
+.nav2 a {
+text-decoration: none;
+color: white;
+transition: 1s ;
+
+}
+.nav2 a:hover{
+font-size: 16px;
+color: #35455e;
+letter-spacing: 2px;
+}
+
+.btn a{
+    padding: 10px;
+    float: right;
+    font-size: 16px;
+    color:white;
+    background-color: transparent;
+    border: none;
+    transition: 0.5s;
+    margin-right: 20px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.btn a:hover {
+    color:#2270e2;
+    background-color: white;
+    border: 1px solid white;
+
+}
+.nav2Header a:hover {
+    color: white;
+    letter-spacing: 0px;
+  }
+
+.secNav {
+float: right;
+}
+.secNav a {
+padding: 30px;
+font-size: 15px;
+}
+.nav2Header {
+font-weight: 600;
+font-size: 16px;
+}
+.nav2 {
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+#active{
+font-weight: bold;
+font-size: 16px;
+color: #233a5e;
+}
+body {
+    margin: 0;
+    padding: 0;
+    
+}
+#newSign{
+    text-decoration: none;
+    color: white;
+    background-color: #2270e2;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 18px;
+    transition: 1s;
+}
+
+#newSign:hover{
+    letter-spacing: 2px;
+}
+
+/* footer */
+.footer {
+  
+background-color: #202020;
+color: white;
+margin-top: 0;
+height: 250px;
+display: flex;
+justify-content: center;
+}
+
+.footer-Icons{
+font-size: 30px;
+
+}
+.footer-Icons a{
+color: white;
+text-decoration: none;
+transition: 1s;
+}
+
+
+.pageCont {
+display: flex;
+flex-direction: column;
+}
+.pageCont a {
+text-decoration: none;
+color: white;
+transition: 1s;
+}
+footer a:hover{
+color:#2270e2;
+letter-spacing: 2px;
+}
+.social-media {
+padding: 20px 100px;
+
+}
+.social-media
+.pages {
+padding: 20px 100px 20px 150px;
+}
+.contact {
+padding: 20px 250px 20px;
+}
+.contact a {
+text-decoration: none;
+color: white;
+}
+main{
+    text-align: center;
+}
+main h2{
+    color: #2270e2;
+}
+main a{
+    color: #2270e2;
+}

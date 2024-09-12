@@ -1,0 +1,382 @@
+/* Header */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  
+}
+#google_translate_element_container {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 1000;
+}
+
+.sect{
+opacity: 0;
+transition: 2s;
+}
+.sect.active{
+z-index: -50px;
+opacity: 1;
+}
+
+
+video{
+    width: 90%;
+    image-resolution: 100%;
+    
+}
+
+
+.nav2 {
+width: 100%;
+height: 80px;
+display: inline;
+background-color: #81cbe9;
+}
+#sers{
+    color: #2270e2;
+    font-size: 30px;
+}
+
+.nav2 {
+width: 100%;
+height: 60px;
+display: inline;
+background-color: #2270e2;
+}
+
+
+.nav2 a {
+text-decoration: none;
+color: white;
+transition: 1s ;
+
+}
+.nav2 a:hover{
+font-size: 16px;
+color: #35455e;
+letter-spacing: 2px;
+}
+
+.nav2Header a:hover {
+  color: white;
+  letter-spacing: 0px;
+}
+.btn a{
+  
+    padding: 10px;
+    float: right;
+    font-size: 16px;
+    color:white;
+    background-color: transparent;
+    border: none;
+    transition: 0.5s;
+    margin-right: 20px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.btn a:hover {
+    color:#2270e2;
+    background-color: white;
+    border: 1px solid white;
+
+}
+
+.secNav{
+  margin-right: 35%;
+}
+.secNav a {
+padding: 30px;
+font-size: 15px;
+}
+.nav2Header {
+font-weight: 600;
+font-size: 16px;
+}
+.nav2 {
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+#active{
+font-weight: bold;
+font-size: 16px;
+color: #233a5e;
+}
+body {
+  transition: 1s;
+  margin: 0;
+  padding: 0;
+    
+}
+
+
+/* CSS for separating the feed with borders */
+.feed-post {
+  border: 1px solid #2270e2;
+  margin-bottom: 20px;
+  padding: 20px;
+  color: black;
+  border-radius: 10px;
+}
+/* CSS for styling the profile picture */
+.profile-picture {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+
+header,
+footer {
+  width: 100%;
+}
+
+.Mcontent{
+  display: flex;
+  width: 100%;
+  
+}
+
+main {
+  display: flex;
+  
+  align-items: center;
+ 
+  padding: 0 20px;
+}
+
+.footer {
+  margin-top: auto;
+}
+
+.feed-post {
+  width: 100%;
+  max-width: 600px;
+  margin-bottom: 20px;
+}
+
+.share-box {
+  width: 100%;
+  max-width: 700px;
+  
+  padding: 20px;
+  
+  
+  box-sizing: border-box;
+}
+
+.share-content {
+  display: flex;
+  align-items: center;
+}
+.share-content button{
+  width: 80vh;
+  margin-left: 7vh;
+  
+}
+.close{
+  font-size: 18px;
+  color: #2270e2;
+  transform: translateX(60vh);
+}
+
+
+
+.popContent{
+  z-index: 500;
+  transition: 1s;
+  background-color: white;
+  width: 800px;
+  height: 500px;
+  position:absolute;
+  border-radius: 10px;
+  margin-left: 40vh;
+  margin-top: 10vh;
+  text-align: center;
+  opacity: 0;
+}
+input[type="submit"] {
+  background-color: #2270e2;
+  padding: 1vh;
+  border-radius: 10px;
+  margin: 3vh;
+  color: white;
+  border: none;
+  width: 15vh;
+}
+
+.popContent h3, .popContent h5{
+  color: #2270e2;
+}
+.share-content button {
+  padding: 8px 20px;
+  border: none;
+  background-color:#2270e2;
+  color: #fff;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+button{
+  transition: 1s;
+}
+
+button:hover{
+  letter-spacing: 2px;
+}
+.like-button,
+.comment-button,
+.share-button {
+  color: white;
+  background-color:#2270e2;
+  width: 15%;
+  height: 10%;
+  border-radius: 3px;
+  border: none;
+  font-size: 15px;
+}
+
+.picture-icons {
+  display: flex;
+  flex-direction: column;
+}
+
+.picture-icons i {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+
+
+/*left side*/
+.left{
+  transition: 1s;
+  margin-top: 12.5vh;
+  position:fixed;
+  left: 1;
+  height: 300px;
+  width: 250px;
+  border-radius: 10px;
+  padding-left: 3vh;
+  border: #2270e2 1px solid;
+  z-index: 1;
+  background-color: white;
+}
+.Mcontent h3{
+  color: #2270e2;
+}
+.left button{
+  background-color: #2270e2;
+  padding: 1vh;
+  border: none;
+  border-radius: 10px;
+  color: white;
+}
+.Mcontent .left a{
+  color: #2270e2;
+  text-decoration: none;
+  
+  transition: 1s;
+}
+.left a:hover{
+  letter-spacing: 2px;
+}
+/*mid*/
+
+.mid{
+  margin: 0vh 50vh;
+}
+.feed-post button{
+  width: 100px;
+  background-color: #2270e2;
+  color: white;
+  transition: 1s;
+}
+
+
+
+
+/*right side*/
+.right{
+  transition: 1s;
+  margin-left: -40vh;
+  background-color: white;
+  margin-top: 12.5vh;
+  
+  height: 450px;
+  width: 250px;
+  border-radius: 10px;
+  padding-left: 3vh;
+  border: #2270e2 1px solid;
+
+}
+
+
+
+/* footer */
+.footer {
+  
+  background-color: #202020;
+  color: white;
+  margin-top: 0;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  z-index: -1;
+  }
+  
+  .footer-Icons{
+  font-size: 30px;
+  
+  }
+  .footer-Icons a{
+  color: white;
+  text-decoration: none;
+  transition: 1s;
+  }
+.right a{
+    color: #2270e2;
+    text-decoration: none;
+    
+    transition: 1s;
+  }
+.right a:hover{
+    letter-spacing: 2px;
+  }
+  
+  
+.pageCont {
+  display: flex;
+  flex-direction: column;
+  }
+  .pageCont a {
+  text-decoration: none;
+  color: white;
+  transition: 1s;
+  }
+  footer a:hover{
+  color:#2270e2;
+  letter-spacing: 2px;
+  }
+  .social-media {
+  padding: 20px 100px;
+  
+  }
+  .social-media
+  .pages {
+  padding: 20px 100px 20px 150px;
+  }
+  .contact {
+  padding: 20px 250px 20px;
+  }
+  .contact a {
+  text-decoration: none;
+  color: white;
+  }
+
+
+

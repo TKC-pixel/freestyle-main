@@ -1,0 +1,299 @@
+/* Navigation bar */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+#google_translate_element_container {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 1000;
+}
+
+.sect {
+  opacity: 0;
+  transition: 2s;
+}
+.sect.active {
+  z-index: -50px;
+  opacity: 1;
+}
+
+video {
+  width: 90%;
+  image-resolution: 100%;
+}
+
+#sers {
+  color: #2270e2;
+  font-size: 30px;
+}
+
+.nav2 {
+  width: 100%;
+  height: 60px;
+  display: inline;
+  background-color: #2270e2;
+}
+
+.nav2 a {
+  text-decoration: none;
+  color: white;
+  transition: 1s;
+}
+.nav2 a:hover {
+  font-size: 16px;
+  color: #35455e;
+  letter-spacing: 2px;
+}
+
+.nav2Header a:hover {
+  color: white;
+  letter-spacing: 0px;
+}
+.btn a {
+  padding: 10px;
+  float: right;
+  font-size: 16px;
+  color: white;
+  background-color: transparent;
+  border: none;
+  transition: 0.5s;
+  margin-right: 20px;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+.btn a:hover {
+  color: #2270e2;
+  background-color: white;
+  border: 1px solid white;
+}
+
+.secNav {
+  margin-left: 16%;
+}
+.secNav a {
+  padding: 30px;
+  font-size: 15px;
+}
+.nav2Header {
+  font-weight: 600;
+  font-size: 16px;
+}
+.nav2 {
+  display: flex;
+  align-items: center;
+}
+#active {
+  font-weight: bold;
+  font-size: 16px;
+  color: #233a5e;
+}
+body {
+  transition: 1s;
+  margin: 0;
+  padding: 0;
+}
+
+#mentor {
+  text-align: center;
+  font-size: 50px;
+  color: white;
+}
+.sect h1 {
+  text-align: center;
+  font-size: 30px;
+  color: #252222;
+}
+/* background picture */
+
+#mentor {
+  background-image: url(images/pexels-vanessa-garcia-6325952.jpg);
+  height: 350px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-size: 100% 100%;
+  opacity: 0.8;
+  margin-top: 0;
+}
+/* Bottom Section with the Contact Us Btn*/
+.bottomSec {
+  height: 350px;
+  width: 100%;
+  text-align: center;
+
+  margin-top: 0;
+}
+.bottomSec a {
+  transition: 1s;
+}
+.bottomSec a:hover {
+  font-size: 20px;
+  background-color: #ffffff;
+  color: #2270e2;
+}
+#lastSec {
+  text-align: center;
+  font-size: 30px;
+  color: #2270e2;
+}
+.lastSec {
+  text-align: center;
+  padding: 30px;
+  width: 70%;
+  margin-left: 150px;
+}
+.secLink {
+  background-color: #2270e2;
+  color: white;
+  text-decoration: none;
+  padding: 20px;
+  border-radius: 10px;
+}
+/* Mentors' cards */
+#first-cards,
+#second-cards {
+  display: flex;
+  flex-direction: row;
+  width: 95%;
+  margin-left: 5%;
+ margin-right: 7%;
+  
+}
+#second-cards{
+  margin-top: -10%;
+  
+}
+#first-cards ,#second-cards p {
+  font-size: 13px;
+  width:95%;
+}
+
+.profile-box {
+  height: 300px;
+  margin: 7%;
+
+  background-position: 50%;
+  background-size: cover;
+  text-align: center;
+  padding: 30px;
+  margin-left: 5%;
+  position: relative;
+  border: #2270e2 1px solid;
+  border-radius: 20px;
+  width: 70%;
+}
+
+.propic {
+  width: 90%;
+  height: 50%;
+  border-radius: 50%;
+}
+
+.mentors-social-media i {
+  border: #2270e2 1px solid;
+  color: #2270e2;
+  border-radius: 50%;
+  padding: 4%;
+  font-size: 150%;
+}
+
+.mentors-social-media i:hover {
+  background-color: #2270e2;
+  color: #fff;
+  font-size: 160%;
+}
+
+.profile-bottom {
+  background: #ccdcec;
+  color: black;
+  border-radius: 20px;
+}
+
+.profile-box button:hover {
+  background: white;
+  color: #2270e2;
+}
+.exp {
+  display: flex;
+  margin: 80px;
+  padding: 50px;
+}
+.exp1 p,
+.exp2 p,
+.exp3 p {
+  font-size: 13px;
+}
+.exp :first-child {
+  width: 98%;
+  text-align: center;
+}
+.exp :nth-child(2) {
+  width: 88%;
+}
+.exp1,
+.exp2,
+.exp3 {
+  background-color: #2270e2;
+  color: white;
+  border-radius: 30px;
+  height: 15px;
+}
+
+.exp2 {
+  width: 98%;
+}
+.exp3 {
+  width: 90%;
+}
+
+/* footer */
+.footer {
+  background-color: #202020;
+  color: white;
+  margin-top: 0;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-Icons {
+  font-size: 30px;
+}
+.footer-Icons a {
+  color: white;
+  text-decoration: none;
+  transition: 1s;
+}
+
+.pageCont {
+  display: flex;
+  flex-direction: column;
+}
+.pageCont a {
+  text-decoration: none;
+  color: white;
+  transition: 1s;
+}
+footer a:hover {
+  color: #2270e2;
+  letter-spacing: 2px;
+}
+.social-media {
+  padding: 20px 100px;
+}
+.social-media .pages {
+  padding: 20px 100px 20px 150px;
+}
+.contact {
+  padding: 20px 250px 20px;
+}
+.contact a {
+  text-decoration: none;
+  color: white;
+}

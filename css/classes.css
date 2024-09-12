@@ -1,0 +1,309 @@
+/* header */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+body {
+  transition: 1s;
+  margin: 0;
+  padding: 0;
+}
+#google_translate_element_container {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 1000;
+}
+
+.sect {
+  opacity: 0;
+  transition: 2s;
+}
+.sect.active {
+  z-index: -50px;
+  opacity: 1;
+}
+
+.nav2 {
+  width: 100%;
+  height: 80px;
+  display: inline;
+  background-color: #81cbe9;
+}
+#sers {
+  color: #2270e2;
+  font-size: 30px;
+}
+
+.nav2 {
+  width: 100%;
+  height: 60px;
+  display: inline;
+  background-color: #2270e2;
+}
+
+.nav2 a {
+  text-decoration: none;
+  color: white;
+  transition: 1s;
+}
+.nav2 a:hover {
+  font-size: 16px;
+  color: #35455e;
+  letter-spacing: 2px;
+}
+
+.nav2Header a:hover {
+  color: white;
+  letter-spacing: 0px;
+}
+.btn a {
+  padding: 10px;
+  float: right;
+  font-size: 16px;
+  color: white;
+  background-color: transparent;
+  border: none;
+  transition: 0.5s;
+  margin-right: 20px;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+.btn a:hover {
+  color: #2270e2;
+  background-color: white;
+  border: 1px solid white;
+}
+
+.secNav {
+  float: right;
+}
+.secNav a {
+  padding: 30px;
+  font-size: 15px;
+}
+.nav2Header {
+  font-weight: 600;
+  font-size: 16px;
+}
+.nav2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#active {
+  font-weight: bold;
+  font-size: 16px;
+  color: #233a5e;
+}
+/* body */
+.container h1 {
+  font-size: 8rem;
+  color: white;
+}
+.container h1 {
+  height: 350px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  image-rendering: optimizeQuality;
+  image-resolution: 100%;
+  background-size: 100% 100%;
+
+  opacity: 0.8;
+  margin-top: 0;
+}
+.container {
+  display: flex;
+}
+
+.section-content p {
+  width: 700px;
+  display: flex;
+  justify-content: center;
+  margin-left: 30%;
+}
+
+.section-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.subsection-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 20px;
+  box-sizing: border-box;
+  gap: 20px; /* Spacing between subsections */
+}
+
+.subsection-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+  margin: 20px 50px;
+  width: calc(
+    50% - 10px
+  ); /* Set each subsection to take half of the container width minus the gap */
+  max-width: 300px; /* Optional: Set max-width to limit the width of each subsection */
+  border: #2270e2 2px solid;
+  border-radius: 30px;
+  background-color: #ffffff;
+  transition: 1s;
+}
+.subsection-content p {
+  opacity: 0;
+  transition: opacity 1s ease-in;
+}
+.subsection-content h2 {
+  transform: translateY(120px);
+  transition: transform 1s ease;
+}
+.subsection-content:hover p {
+  opacity: 1;
+  color: white;
+}
+.subsection-content:hover {
+  background-color: #2270e2;
+}
+.subsection-content:hover h2 {
+  transform: translateY(0px);
+  color: white;
+}
+.subsection-content h2 {
+  margin-bottom: 15px;
+  text-align: center;
+  color: #2270e2;
+}
+.onlineMentor {
+  width: 30%;
+  border-radius: 20px;
+}
+
+.subsection0 {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+.subsection1 {
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+  width: 600hv;
+}
+#onlineHead,
+#classSche {
+  text-align: center;
+}
+.onlineHead,
+.classSche {
+  text-align: center;
+  width: 900px;
+  margin-left: 30vh;
+}
+.schedule1,
+.schedule2 {
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+}
+
+.session {
+  border: #2270e2 solid 1px;
+  border-radius: 30px;
+  padding: 10px 30px;
+  width: 250vh;
+  margin: auto 30px;
+}
+.schedule3 {
+  display: flex;
+  justify-content: center;
+  width: 100vh;
+  padding: 30px;
+  margin-left: 25%;
+}
+.day,
+.time {
+  color: #2270e2;
+  font-size: 20px;
+  font-weight: 100px;
+}
+/* bottom section with "contact Us" */
+.bottomSec {
+  background-image: url(pexels-christina-morillo-1181396.jpg);
+  height: 350px;
+  width: 100%;
+  text-align: center;
+  background-size: 100% 100%;
+  opacity: 0.85;
+  margin-top: 0;
+}
+.lastSec {
+  text-align: center;
+  padding: 30px;
+  width: 70%;
+  margin-left: 150px;
+}
+.secLink {
+  background-color: #2270e2;
+  color: white;
+  text-decoration: none;
+  padding: 20px;
+  border-radius: 10px;
+}
+/* footer */
+.footer {
+  background-color: #202020;
+  color: white;
+  margin-top: 0;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-Icons {
+  font-size: 30px;
+}
+.footer-Icons a {
+  color: white;
+  text-decoration: none;
+  transition: 1s;
+}
+
+.pageCont {
+  display: flex;
+  flex-direction: column;
+}
+.pageCont a {
+  text-decoration: none;
+  color: white;
+  transition: 1s;
+}
+footer a:hover {
+  color: #2270e2;
+  letter-spacing: 2px;
+}
+.social-media {
+  padding: 20px 100px;
+}
+.social-media .pages {
+  padding: 20px 100px 20px 150px;
+}
+.contact {
+  padding: 20px 250px 20px;
+}
+.contact a {
+  text-decoration: none;
+  color: white;
+}

@@ -1,0 +1,384 @@
+/* header */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+#google_translate_element_container {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 1000;
+}
+
+.sect {
+  opacity: 0;
+  transition: 2s;
+}
+.sect.active {
+  z-index: -50px;
+  opacity: 1;
+}
+
+video {
+  width: 90%;
+  image-resolution: 100%;
+  margin-bottom: 20px;
+}
+
+#sers {
+  color: #2270e2;
+  font-size: 30px;
+  margin-left: 45%;
+}
+
+.nav2 {
+  width: 100%;
+  height: 60px;
+  display: inline;
+  background-color: #2270e2;
+}
+
+.nav2 a {
+  text-decoration: none;
+  color: white;
+  transition: 1s;
+}
+.nav2 a:hover {
+  font-size: 16px;
+  color: #35455e;
+  letter-spacing: 2px;
+}
+
+.btn a {
+  padding: 10px;
+  float: right;
+  font-size: 16px;
+  color: white;
+  background-color: transparent;
+  border: none;
+  transition: 0.5s;
+  margin-right: 20px;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+.btn a:hover {
+  color: #2270e2;
+  background-color: white;
+  border: 1px solid white;
+}
+
+.secNav {
+  float: right;
+}
+.secNav a {
+  padding: 30px;
+  font-size: 15px;
+}
+.nav2Header {
+  font-weight: 600;
+  font-size: 16px;
+}
+.nav2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#active {
+  font-weight: bold;
+  font-size: 16px;
+  color: #233a5e;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+}
+
+.info {
+  text-align: center;
+}
+.info p {
+  font-size: 16px;
+  padding: 0px 20px;
+}
+.info h1 {
+  padding-top: 20px;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.wel {
+  position: relative;
+  color: #2270e2;
+  opacity: 0;
+  transition: opacity 0.8s ease-in-out;
+}
+.wel.show {
+  opacity: 1;
+}
+.wel::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -2px;
+  height: 100%;
+  width: 1px;
+
+  animation: animate 4s steps(12) infinite;
+}
+
+@keyframes animate {
+  40%,
+  60% {
+    left: calc(100% + 4px);
+  }
+  100% {
+    left: 0%;
+  }
+}
+
+#servs {
+  color: #2270e2;
+}
+
+.Reviews {
+  /* text-align: center; */
+  align-items: center;
+}
+.Reviews h1 {
+  font-weight: bold;
+  font-size: 40px;
+  color: #3e59aa;
+}
+.Reviews img {
+  width: 200px;
+  border-radius: 50%;
+  margin-left: 30%;
+}
+.first {
+  display: flex;
+  justify-content: space-between;
+  margin: 0px 15%;
+  align-items: center;
+}
+.second {
+  margin: 0px 15%;
+  display: flex;
+  justify-content: space-between;
+ 
+ 
+}
+.Reviews p{
+  width:70%;
+  margin-left: 15%;
+}
+
+.footer {
+  background-color: #202020;
+  color: white;
+  margin-top: 0;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-Icons {
+  font-size: 30px;
+}
+.footer-Icons a {
+  color: white;
+  text-decoration: none;
+  transition: 1s;
+}
+
+.pageCont {
+  display: flex;
+  flex-direction: column;
+}
+.pageCont a {
+  text-decoration: none;
+  color: white;
+  transition: 1s;
+}
+footer a:hover {
+  color: #2270e2;
+  letter-spacing: 2px;
+}
+.social-media {
+  padding: 20px 100px;
+}
+.social-media .pages {
+  padding: 20px 100px 20px 150px;
+}
+.contact {
+  padding: 20px 250px 20px;
+}
+.contact a {
+  text-decoration: none;
+  color: white;
+}
+.myImages {
+  margin-bottom: 8px;
+  overflow-x: auto;
+  gap: 20px;
+  display: grid;
+  scrollbar-width: none;
+
+  grid-template-columns: repeat(10, 1fr);
+}
+.myImages::-webkit-scrollbar {
+  display: none;
+}
+
+.myImages img {
+  width: 400px;
+  margin-bottom: 15px;
+  object-fit: cover;
+}
+.container {
+  max-width: 1200px;
+  width: 95%;
+  margin: auto;
+}
+.scroller {
+  height: 10px;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+}
+.scroller1 {
+  height: 5px;
+  width: 100%;
+  background-color: white;
+  position: relative;
+  border-radius: 20px;
+}
+.scrollbar {
+  position: absolute;
+  height: 100%;
+  width: 50%;
+  background-color: rgb(77, 77, 77);
+  border-radius: inherit;
+  cursor: grab;
+}
+.scrollbar ::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+.scrollbar:active {
+  cursor: grabbing;
+}
+.container button {
+  background-color: transparent;
+  border: 0px;
+  position: absolute;
+  font-size: 28px;
+}
+.container {
+  margin-top: -50px;
+}
+#previous {
+  left: -38px;
+  transform: translateY(200px);
+}
+#next {
+  transform: translateY(-195px);
+  right: -36px;
+}
+.slider {
+  position: relative;
+}
+.card {
+  position: relative;
+}
+.card p {
+  transform: translate(10px, 180px);
+  background-color: transparent;
+  font-size: 20px;
+  color: #2270e2;
+  background-size: contain;
+}
+
+.slides_images {
+  position: relative;
+  width: 500%;
+
+  animation: 38s slider infinite;
+}
+
+.Reviews h6,
+.Reviews h5 {
+  color: #2270e2;
+  text-align: center;
+}
+.Reviews a,
+.signbtn a {
+  text-decoration: none;
+  background-color: #2270e2;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  border: 0px;
+  transition: 0.5s;
+  margin-bottom: 10px;
+  
+}
+.Reviews a {
+  margin-left: 45%;
+}
+.Reviews a:hover,.signbtn a:hover {
+  padding: 15px;
+}
+#joinHeader {
+  text-align: center;
+  width: 70%;
+  color: #2270e2;
+  margin-left: 15%;
+}
+.join p {
+  text-align: center;
+  width: 70%;
+  margin-left: 15%;
+}
+.join {
+  margin-top: 5%;
+}
+
+.counters {
+  padding: 50px 32px;
+  background: #2270e2;
+  color: #ffffff;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  text-align: center;
+  width: 85%;
+  margin-top: 5%;
+}
+
+.counter {
+  position: relative;
+}
+.counter h2 {
+  font-size: 50px;
+}
+.counter:not(:last-child)::before {
+  /* content: " "; */
+  background: #ffffff;
+  position: absolute;
+  width: 2px;
+  height: 50px;
+  top: 50%;
+  transform: translateY(-50%);
+  right: -16px;
+}
+
+
+footer {
+  margin-top: 20px;
+}
